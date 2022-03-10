@@ -27,14 +27,17 @@ const getNameFromUser = user => {
 
 const Header = ({ session, muted, mutePlayback, unmutePlayback, login }) => (
   <div style={headerStyle}>
-    <Link href="/">
+    <h2> 
+    AuxVerse
+    </h2>
+    {/* <Link href="/">
       <a style={Object.assign({}, linkStyle, mainLinkStyle)}>
         <img src="/static/c-icon-128.png" height="30" />
       </a>
     </Link>
     <Link href="/about">
       <a style={linkStyle}><FormattedMessage id="about" /></a>
-    </Link>
+    </Link> */}
     {session.user
       ? <div className="media user-header">
           <style jsx>{`

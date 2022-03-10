@@ -13,7 +13,8 @@ import NowPlaying from '../components/NowPlaying';
 import Devices from '../components/Devices';
 import PageWithIntl from '../components/PageWithIntl';
 import { FormattedMessage } from 'react-intl';
-import SynthboiAnimation from '../components/World';
+
+import Stage from '../components/WorldStage';
 class Main extends React.Component {
   static getInitialProps({ req, store, isServer }) {
     return Promise.all([
@@ -43,7 +44,7 @@ class Main extends React.Component {
               }
             `}
           </style>
-          <SynthboiAnimation />
+          <Stage />
           <div style={{ float: 'left' }}>
             <Queue items={this.props.queue} session={this.props.session} />
             {this.props.session.user !== null ? <AddToQueue /> : null}

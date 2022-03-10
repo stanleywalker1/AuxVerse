@@ -16,10 +16,10 @@ export default class IntlDocument extends Document {
     return (
       <html>
         <Head>
-          <title>C - Collaborative listening on Spotify</title>
+          <title>AuxVerse</title>
           <meta
             name="description"
-            content="A collaborative queue where you propose and vote what's going to play next. Use your Spotify account to log in"
+            content="A collaborative world where you propose and vote what's going to play next. Use your Spotify account to log in"
           />
           <link rel="shortcut icon" href="/static/c-icon-128.png" />
           <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
