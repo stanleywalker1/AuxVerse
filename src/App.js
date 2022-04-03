@@ -1,6 +1,6 @@
 import { WaterPlane } from './components/Water';
-import React, { Suspense, useEffect, useState} from 'react';
-import { Canvas, useThree} from '@react-three/fiber';
+import React, { Suspense} from 'react';
+import { Canvas} from '@react-three/fiber';
 import { Sky } from '@react-three/drei';
 import './App.css';
 
@@ -30,6 +30,10 @@ const WorldCreator = props => {
   );
 };
 
+const Title = () => (
+  <div className="title">AuxVerse</div>
+)
+
 
 const Scene = () => {
   const style = {
@@ -43,17 +47,24 @@ const Scene = () => {
 
   return (
     <>
-    <Canvas style={style} camera={{ position: [0, 3, 10] }}>
-    {/* <color attach="background" args={[bgColor]} /> */}
-     <WorldCreator />
-    </Canvas>
+
+      <Canvas id="canvas" style={style} camera={{ position: [0, 3, 10] }}>
+        {/* <color attach="background" args={[bgColor]} /> */}
+        <WorldCreator />
+      </Canvas>
   </>
 
   ) 
 };
 
+
 const App = () => {
-  return <Scene />;
+  return (
+    <>
+    <Title />
+    <Scene />
+    </>
+  );
 };
 
 export default App;
