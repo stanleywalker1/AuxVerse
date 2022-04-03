@@ -33,7 +33,7 @@ const WorldCreator = props => {
 
 const Scene = () => {
   const style = {
-    background: '#30A9A4',
+    background: '#ffffff',
     top: 0,
     left: 0,
     height: '700px',
