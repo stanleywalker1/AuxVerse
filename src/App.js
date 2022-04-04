@@ -40,7 +40,7 @@ const Scene = () => {
     background: '#ffffff',
     top: 0,
     left: 0,
-    height: '720px',
+    height: '740px',
     width: '100%',
     zIndex: 1
   };
