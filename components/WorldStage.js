@@ -18,6 +18,8 @@ export const cameraStore = proxy({ mainCamera: null });
 
 let lerpValue = 0;
 
+
+
 export default function Stage() {
   //const { bgColor } = useControls({ bgColor: "#15e9bb" });
   const style = {
@@ -102,6 +104,7 @@ const WorldCreator = props => {
         exposure={0.5}
         {...props}
       />
+      
 
       <WaterPlane />
     </Suspense>
